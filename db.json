@@ -7,7 +7,7 @@
       "telefono": "555-555-5555",
       "empresa": "embaj",
       "puesto": "buis",
-      "estado": true,
+      "estado": false,
       "id": 5,
       "true": ""
     },
@@ -50,6 +50,16 @@
       "puesto": "limpiador",
       "estado": 1,
       "id": 10
+    },
+    {
+      "nombre": "Ramiro",
+      "apellido": "Villamizar",
+      "email": "the_pivotsk8@hotmail.com",
+      "telefono": "666-666-6666",
+      "empresa": "ciudadela",
+      "puesto": "mas recreo",
+      "estado": 1,
+      "id": 11
     }
   ]
 }

@@ -15,7 +15,7 @@ defineProps({
 
 const handlerSubmit = async (data) => {
   try {
-    data.estado = 1;
+    data.estado = 0;
     await ClienteServices.agregarCliente(data);
     // mejor usar esta forma para redirigir ya que si se cambia el path el nombre es el mismo
     router.push({ name: 'listado-clientes' });
