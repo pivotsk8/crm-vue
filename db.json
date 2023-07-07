@@ -1,12 +1,83 @@
 {
   "clientes": [
     {
-      "nombre": "juan",
-      "id": 1
+      "nombre": "Ramiro",
+      "apellido": "Villamizar",
+      "email": "the_pivotsk8@hotmail.com",
+      "telefono": "555-555-5555",
+      "empresa": "rami",
+      "puesto": "full",
+      "estado": 0,
+      "id": 3
     },
     {
-      "nombre": "maria",
-      "id": 2
+      "nombre": "pauline",
+      "apellido": "morales",
+      "email": "pauline.morales@hotmail.fr",
+      "telefono": "555-555-5555",
+      "empresa": "embaja",
+      "puesto": "encargada de la fiesta",
+      "estado": 1,
+      "id": 4
+    },
+    {
+      "nombre": "pauline",
+      "apellido": "morales",
+      "email": "pauline.morales@hotmail.fr",
+      "telefono": "555-555-5555",
+      "empresa": "embaj",
+      "puesto": "buis",
+      "estado": 0,
+      "id": 5
+    },
+    {
+      "nombre": "pauline belle",
+      "apellido": "morales",
+      "email": "pauline.morales@hotmail.fr",
+      "telefono": "555-555-5555",
+      "empresa": "recreo",
+      "puesto": "mas recreo",
+      "id": 6
+    },
+    {
+      "nombre": "rick",
+      "apellido": "sanchez",
+      "estado": 1,
+      "email": "rick@space.com",
+      "telefono": "555-555-5555",
+      "empresa": "ciudadela",
+      "puesto": "p",
+      "id": 7
+    },
+    {
+      "nombre": "morty",
+      "apellido": "smith",
+      "email": "morty@ciudadela.com",
+      "telefono": "555-555-5555",
+      "empresa": "ciudadela",
+      "puesto": "limpiador",
+      "estado": 0,
+      "id": 8
+    },
+    {
+      "nombre": "rick",
+      "apellido": "sanchez",
+      "email": "me@mydomain.com",
+      "telefono": "123-456-7890",
+      "empresa": "ciudadela",
+      "estado": 1,
+      "puesto": "pr",
+      "id": 9
+    },
+    {
+      "nombre": "morty",
+      "apellido": "smith",
+      "email": "me@mydomain.com",
+      "telefono": "123-456-7890",
+      "empresa": "ciudadela",
+      "puesto": "limpiador",
+      "estado": 1,
+      "id": 10
     }
   ]
 }
