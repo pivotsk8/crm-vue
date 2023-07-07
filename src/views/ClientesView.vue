@@ -3,12 +3,12 @@ import { onMounted, ref, computed } from 'vue';
 import RouterLink from '../components/UI/RouterLink.vue';
 import Heading from '../components/UI/Heading.vue';
 import Cliente from '../components/Cliente.vue';
-import ClienteService from '../services/ClienteServices';
+import ClienteServices from '../services/ClienteServices';
 
 const clientes = ref([]);
 onMounted(async () => {
   try {
-    const { data } = await ClienteService.obternerClientes();
+    const { data } = await ClienteServices.obternerClientes();
     clientes.value = data;
   } catch (error) {
     console.log('error');
@@ -24,6 +24,25 @@ defineProps({
 const existenClientes = computed(() => {
   return clientes.value.length > 0;
 });
+
+const actualizarEstado = async ({ id, estado }) => {
+  try {
+    await ClienteServices.cambiarEstado(id, { estado: !estado });
+    const i = clientes.value.findIndex((cliente) => cliente.id === id);
+    clientes.value[i].estado = !estado;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const eliminarCliente = async (id) => {
+  try {
+    await ClienteServices.eliminarCliente(id);
+    clientes.value = clientes.value.filter((cliente) => cliente.id !== id);
+  } catch (error) {
+    console.log(error);
+  }
+};
 </script>
 
 <template>
@@ -68,6 +87,8 @@ const existenClientes = computed(() => {
               <Cliente
                 v-for="cliente in clientes"
                 :cliente="cliente"
+                @actualizar-estado="actualizarEstado"
+                @eliminar-cliente="eliminarCliente"
                 :key="cliente.id" />
             </tbody>
           </table>
